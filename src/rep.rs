@@ -113,6 +113,7 @@ pub struct Mount {
 #[derive(Clone, Debug, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub struct State {
+    pub state: String,
     pub error: String,
     pub exit_code: u64,
     #[cfg(feature = "chrono")]
